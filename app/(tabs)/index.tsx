@@ -1,16 +1,17 @@
-import { View, StyleSheet, Platform } from 'react-native';
+import { View, StyleSheet, ImageBackground } from 'react-native';
 
 
 export default function index() {
   return (
-    <View style={styles.container}>
+    <ImageBackground source={require('../../assets/images/fondo.png')} style={styles.container}>
 
-    </View>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
   container:{
     backgroundColor: '#fff',
+    flex: 1,
   }
 });

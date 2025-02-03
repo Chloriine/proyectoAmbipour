@@ -14,10 +14,10 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
         tabBarStyle: Platform.select({
-          ios: {
-            position: 'absolute',
+          default: {
+            height: 60,
+            paddingTop: '2%',          
           },
-          default: {},
         }),
       }}>
         <Tabs.Screen

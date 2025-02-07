@@ -11,12 +11,12 @@ export default function index() {
 
       <View style={GlobalStyles.flexRowContainer}>
         <View style={GlobalStyles.temperaturaHumedadContainer}>
-          <Text style={GlobalStyles.temperaturaText}>Temperatura</Text>
-          <Text style={GlobalStyles.gradosText}>27ºC</Text>
+          <Text style={GlobalStyles.temperaturaHumedadText}>Temperatura</Text>
+          <Text style={GlobalStyles.gradosPerCentText}>27ºC</Text>
         </View>
         <View style={GlobalStyles.temperaturaHumedadContainer}>
-          <Text style={GlobalStyles.humedadText}>Humedad</Text>
-          <Text  style={GlobalStyles.porCentText}>65%</Text>
+          <Text style={GlobalStyles.temperaturaHumedadText}>Humedad</Text>
+          <Text  style={GlobalStyles.gradosPerCentText}>65%</Text>
         </View>
       </View>
 

@@ -25,9 +25,24 @@ export const GlobalStyles = StyleSheet.create({
     alignItems: 'center',
     width: 280,
     height: 150,
-    backgroundColor: Colors.blancoTraslucio,
+    backgroundColor: Colors.blancoTraslucido,
     borderRadius: 10,
     borderWidth: 1,
     borderColor: Colors.azul,
   },
+  temperaturaHumedadText:{
+    fontFamily: 'Jua',
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: Colors.azul,
+    textAlign: 'center',
+  },
+  gradosPerCentText:{
+    fontFamily: 'Jua',
+    fontSize: 70,
+    fontWeight: 'bold',
+    color: Colors.azul,
+    textAlign: 'center',
+  },
+
 });

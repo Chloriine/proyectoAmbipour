@@ -16,7 +16,7 @@ export default function TabLayout() {
         tabBarStyle: Platform.select({
           default: {
             height: 60,
-            paddingTop: '2%',          
+            paddingTop: '2%',  
           },
         }),
       }}>

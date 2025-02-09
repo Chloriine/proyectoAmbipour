@@ -7,7 +7,7 @@ export const GlobalStyles = StyleSheet.create({
     resizeMode: 'cover',
   },
   titulo:{
-    fontSize: 60,
+    fontSize: 50,
     fontWeight: 'bold',
     color: '#fff',
     textAlign: 'center',
@@ -43,6 +43,47 @@ export const GlobalStyles = StyleSheet.create({
     fontWeight: 'bold',
     color: Colors.azul,
     textAlign: 'center',
+  },
+  containerHistorial: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+  },
+  contenedorHistorial: {
+    flexDirection: 'row',
+    width: '80%',
+    gap: 30,
+    marginLeft: '40%',
+  },
+  botonHumedad: {
+    backgroundColor: '#4ADF54',
+    padding: 8,
+    borderRadius: 10,
+    width: 100,
+  },
+  botonTemperatura: {
+    padding: 8,
+    borderRadius: 10,
+    width: 100,
+    backgroundColor: 'red',
+  },
+  botonHistorialTexto: {
+    color: '#fff',
+    fontSize: 13,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  contenedorImagen: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+  },
+  image: {
+    width: 280,
+    height: 180,
+    marginBottom: 80,
+    marginLeft: -30,
   },
 
 });

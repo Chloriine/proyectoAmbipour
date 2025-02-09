@@ -17,6 +17,7 @@ export default function TabLayout() {
           default: {
             position: 'absolute', // Hace que la barra de navegación sea flotante
             bottom: 10, // Margen inferior para que flote
+            marginLeft: 150,
             width: '50%', // Ancho reducido
             alignSelf: 'center', // Centra la barra de navegación
             height: 70, // Altura más reducida

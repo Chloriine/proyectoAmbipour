@@ -8,10 +8,6 @@ import { useFonts } from 'expo-font';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
-  const [loaded]=useFonts({
-      Cloudy:require(`../../assets/fonts/Cloudy-0W244.ttf`),
-      Jua:require(`../../assets/fonts/Jua-Regular.ttf`)
-    });
   return (
     <Tabs
       screenOptions={{
@@ -30,10 +26,13 @@ export default function TabLayout() {
             borderWidth: 1, // Bordes gruesos
             borderColor: Colors.azul, // Color de borde personalizado
             elevation: 5, // Para Android
-            flexDirection:"column"
+            flexDirection:"column",
           },
         }),
         tabBarLabelPosition: "below-icon",
+        tabBarLabelStyle:{
+          fontFamily:"jua"
+        }
       }}
     >
       
@@ -41,21 +40,21 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Inicio',
-          tabBarIcon: ({ color }) => <Ionicons name="home-outline" size={28} color={Colors.azul} />,
+          tabBarIcon: ({ color }) => <Ionicons name="home" size={28} color={Colors.azul} />,
         }}
       />
       <Tabs.Screen
         name="historial/index"
         options={{
           title: 'Historial',
-          tabBarIcon: ({ color }) => <Ionicons name="bar-chart-outline" size={28} color={Colors.azul} />,
+          tabBarIcon: ({ color }) => <Ionicons name="bar-chart" size={28} color={Colors.azul} />,
         }}
       />
       <Tabs.Screen
         name="ajustes/index"
         options={{
           title: 'Ajustes',
-          tabBarIcon: ({ color }) => <Ionicons name="settings-outline" size={28} color={Colors.azul} />,
+          tabBarIcon: ({ color }) => <Ionicons name="settings" size={28} color={Colors.azul} />,
         }}
       />
     </Tabs>

@@ -9,9 +9,10 @@ export const GlobalStyles = StyleSheet.create({
   },
   titulo:{
     fontSize: 50,
-    fontWeight: 'bold',
     color: '#fff',
     textAlign: 'center',
+    fontFamily:"cloudy",
+    marginTop:"2%"
     
   },
   flexRowContainer:{
@@ -34,7 +35,6 @@ export const GlobalStyles = StyleSheet.create({
   temperaturaHumedadText:{
     fontFamily: "Jua",
     fontSize: 25,
-    fontWeight: 'bold',
     color: Colors.azul,
     textAlign: 'center',
   
@@ -42,7 +42,6 @@ export const GlobalStyles = StyleSheet.create({
   gradosPerCentText:{
     fontFamily: 'Jua',
     fontSize: 70,
-    fontWeight: 'bold',
     color: Colors.azul,
     textAlign: 'center',
   },
@@ -72,7 +71,6 @@ export const GlobalStyles = StyleSheet.create({
   botonHistorialTexto: {
     color: '#fff',
     fontSize: 13,
-    fontWeight: 'bold',
     textAlign: 'center',
   },
   contenedorImagen: {
@@ -101,9 +99,8 @@ export const GlobalStyles = StyleSheet.create({
     margin: 30,
   },
   ajustesTexto:{
-    fontFamily: "Jua",
+    fontFamily: "jua",
     fontSize: 25,
-    fontWeight: 'bold',
     color: Colors.azul,
     textAlign: 'center',
 
@@ -112,17 +109,37 @@ export const GlobalStyles = StyleSheet.create({
     flexDirection:"row",
     marginHorizontal:10,
     marginBottom:10,
-    justifyContent:"space-around"
+    gap:"10%"
   },
   ajustesOpcionText:{
-    fontFamily: "Cloudy",
-    fontSize: 10,
-    fontWeight: 'bold',
+    fontFamily: "jua",
+    fontSize: 15,
     color: Colors.azul,
-    textAlign: 'center'
   },
   ajustesOpcion:{
-
+    flexDirection:"column"
+  },
+  gradosContainer:{
+    flexDirection:"row",
+    justifyContent: 'center',
+    gap: 2
+  },
+  gradosText:{
+    fontFamily:"jua",
+    color:"#f9f9f9",
+    textAlign: 'center'
+  },
+  gradoIzq: {
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10,
+    backgroundColor: Colors.azulOscuro,
+    width: 40
+  },
+  gradoDcha: {
+    borderTopRightRadius: 10,
+    borderBottomRightRadius: 10,
+    backgroundColor: Colors.azulOscuro,
+    width: 40
   }
 
 

@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Colors } from './Colors';
+import ajustes from '@/app/(tabs)/ajustes';
 
 export const GlobalStyles = StyleSheet.create({
   imagenFondo:{
@@ -31,11 +32,12 @@ export const GlobalStyles = StyleSheet.create({
     borderColor: Colors.azul,
   },
   temperaturaHumedadText:{
-    fontFamily: 'Jua',
+    fontFamily: "Jua",
     fontSize: 25,
     fontWeight: 'bold',
     color: Colors.azul,
     textAlign: 'center',
+  
   },
   gradosPerCentText:{
     fontFamily: 'Jua',
@@ -85,5 +87,43 @@ export const GlobalStyles = StyleSheet.create({
     marginBottom: 80,
     marginLeft: -30,
   },
+  //ajustes
+  ajustesContainer:{
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    width: 580,
+    height: 200,
+    backgroundColor: Colors.blancoTraslucido,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: Colors.azul,
+    margin: 30,
+  },
+  ajustesTexto:{
+    fontFamily: "Jua",
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: Colors.azul,
+    textAlign: 'center',
+
+  },
+  ajustesOpcionesContainer:{
+    flexDirection:"row",
+    marginHorizontal:10,
+    marginBottom:10,
+    justifyContent:"space-around"
+  },
+  ajustesOpcionText:{
+    fontFamily: "Cloudy",
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: Colors.azul,
+    textAlign: 'center'
+  },
+  ajustesOpcion:{
+
+  }
+
 
 });

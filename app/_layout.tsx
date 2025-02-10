@@ -10,6 +10,10 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
+  const [loaded]=useFonts({
+    Cloudy:require("../assets/fonts/Cloudy-0W244.ttf"),
+    Jua:require("../assets/fonts/Jua-Regular.ttf")
+  });
   
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>

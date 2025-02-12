@@ -10,6 +10,20 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
+  const [loaded]=useFonts({
+    cloudy:require("../assets/fonts/Cloudy-0W244.ttf"),
+    jua:require("../assets/fonts/Jua-Regular.ttf")
+  });
+  
+  useEffect(() => {
+    if (loaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [loaded]);
+
+  if (!loaded) {
+    return null;
+  }
   
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>

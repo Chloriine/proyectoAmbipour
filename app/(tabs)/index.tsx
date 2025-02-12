@@ -7,7 +7,7 @@ export default function index() {
   return (
     <ImageBackground source={require('../../assets/images/fondo.png')} style={GlobalStyles.imagenFondo}>
 
-      <Text style={GlobalStyles.titulo}>Titulo</Text>
+      <Text style={GlobalStyles.titulo}>PaControl</Text>
 
       <View style={GlobalStyles.flexRowContainer}>
         <View style={GlobalStyles.temperaturaHumedadContainer}>

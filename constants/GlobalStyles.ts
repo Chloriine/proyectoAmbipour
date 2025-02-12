@@ -109,15 +109,17 @@ export const GlobalStyles = StyleSheet.create({
     flexDirection:"row",
     marginHorizontal:10,
     marginBottom:10,
-    gap:"10%"
+    gap:15
   },
   ajustesOpcionText:{
     fontFamily: "jua",
     fontSize: 15,
     color: Colors.azul,
+    marginBottom:15
   },
   ajustesOpcion:{
-    flexDirection:"column"
+    flexDirection:"column",
+    alignSelf:"flex-start",
   },
   gradosContainer:{
     flexDirection:"row",
@@ -126,20 +128,132 @@ export const GlobalStyles = StyleSheet.create({
   },
   gradosText:{
     fontFamily:"jua",
-    color:"#f9f9f9",
-    textAlign: 'center'
+    color:Colors.blanco,
+    textAlign: 'center',
+    fontSize:20,
+    paddingHorizontal:5,
+    paddingVertical:10
+
   },
   gradoIzq: {
-    borderTopLeftRadius: 10,
-    borderBottomLeftRadius: 10,
-    backgroundColor: Colors.azulOscuro,
-    width: 40
+    borderTopLeftRadius: 15,
+    borderBottomLeftRadius: 15,
+    backgroundColor: Colors.azulAjustesGrado,
+    width: 60
   },
   gradoDcha: {
-    borderTopRightRadius: 10,
-    borderBottomRightRadius: 10,
+    borderTopRightRadius: 15,
+    borderBottomRightRadius: 15,
+    backgroundColor: Colors.azulAjustesGrado,
+    width: 60
+  },
+  gradoIzqPulsado: {
+    borderTopLeftRadius: 15,
+    borderBottomLeftRadius: 15,
     backgroundColor: Colors.azulOscuro,
-    width: 40
+    width: 60
+  },
+  gradoDchaPulsado: {
+    borderTopRightRadius: 15,
+    borderBottomRightRadius: 15,
+    backgroundColor: Colors.azulOscuro,
+    width: 60
+  },
+  habitaculoColores:{
+    backgroundColor:Colors.blanco,
+    height:20,
+    borderRadius:20,
+    borderColor:Colors.negro,
+    borderWidth:1,
+    width:200,
+    alignSelf:"center"
+  },
+  habitaculoNumeros:{
+    flexDirection:"row",
+  },
+  temperaturaAzul:{
+    width:20,
+    backgroundColor:Colors.azulAjustesHabitaculo,
+    borderTopWidth:0.5,
+    borderBottomWidth:0.5,
+    borderColor:Colors.negro,
+    height:25
+  },
+  temperaturaVerde:{
+    width:20,
+    backgroundColor:Colors.verdeAjustesHabitaculo,
+    borderTopWidth:0.5,
+    borderBottomWidth:0.5,
+    borderColor:Colors.negro,
+    height:25
+  },
+  temperaturaRojo:{
+    width:20,
+    backgroundColor:Colors.rojoAjustesHabitaculo,
+    borderTopWidth:0.5,
+    borderBottomWidth:0.5,
+    borderColor:Colors.negro,
+    height:25
+  },
+  numerosTemperatura:{
+    flexDirection:"row",
+    justifyContent:"space-between",
+  },
+  temperaturaText:{
+    color:Colors.negro,
+    fontSize:20,
+    fontFamily:"jua",
+    padding:3
+  },
+  temperaturaTextDcha:{
+    backgroundColor:Colors.blanco,
+    width:20,
+    alignContent:"center",
+    borderWidth:0.7,
+    borderColor:Colors.negro,
+    borderTopRightRadius:20,
+    borderBottomRightRadius:20,
+    height:25
+  },
+  temperaturaTextIzq:{
+    backgroundColor:Colors.blanco,
+    width:20,
+    alignContent:"center",
+    borderWidth:0.7,
+    borderColor:Colors.negro,
+    borderTopLeftRadius:20,
+    borderBottomLeftRadius:20,
+    height:25
+  },
+  temperaturaNumero:{
+    color:Colors.azul,
+    alignSelf:"center",
+    fontFamily:"jua"
+  },
+  botonNumerosAjustes:{
+    marginHorizontal:10,
+    marginVertical:10
+  },
+  degradao: {
+    flexDirection:"row"
+  },
+  imagenDegradao:{
+    height:23,
+    width:50,
+    gap:0
+  },
+  intervalosContainer:{
+    flexDirection:"row",
+    gap:7
+  },
+  intervalo:{
+    backgroundColor:Colors.azulOscuro,
+    color:Colors.blanco,
+    fontSize:20,
+    fontFamily:"jua",
+    paddingVertical:5,
+    paddingHorizontal:10,
+    borderRadius:10
   }
 
 

@@ -9,10 +9,10 @@ export const GlobalStyles = StyleSheet.create({
   },
   titulo:{
     fontSize: 50,
-    color: '#fff',
+    color: Colors.blanco,
     textAlign: 'center',
     fontFamily:"cloudy",
-    marginTop:"2%"
+    marginTop:"2%",
     
   },
   flexRowContainer:{
@@ -33,21 +33,21 @@ export const GlobalStyles = StyleSheet.create({
     borderColor: Colors.azul,
   },
   temperaturaHumedadText:{
-    fontFamily: "Jua",
+    fontFamily: "jua",
     fontSize: 25,
     color: Colors.azul,
     textAlign: 'center',
   
   },
   gradosPerCentText:{
-    fontFamily: 'Jua',
+    fontFamily: 'jua',
     fontSize: 70,
     color: Colors.azul,
     textAlign: 'center',
   },
   containerHistorial: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.blanco,
     alignItems: 'center',
   },
   contenedorHistorial: {
@@ -57,7 +57,7 @@ export const GlobalStyles = StyleSheet.create({
     marginLeft: '40%',
   },
   botonHumedad: {
-    backgroundColor: '#4ADF54',
+    backgroundColor: Colors.verdeHumedad,
     padding: 8,
     borderRadius: 10,
     width: 100,
@@ -69,9 +69,10 @@ export const GlobalStyles = StyleSheet.create({
     backgroundColor: 'red',
   },
   botonHistorialTexto: {
-    color: '#fff',
+    color: Colors.blanco,
     fontSize: 13,
     textAlign: 'center',
+    fontFamily:"jua"
   },
   contenedorImagen: {
     flex: 1,
@@ -115,7 +116,8 @@ export const GlobalStyles = StyleSheet.create({
     fontFamily: "jua",
     fontSize: 15,
     color: Colors.azul,
-    marginBottom:15
+    marginBottom:15,
+    alignSelf:"center"
   },
   ajustesOpcion:{
     flexDirection:"column",
@@ -247,13 +249,22 @@ export const GlobalStyles = StyleSheet.create({
     gap:7
   },
   intervalo:{
+    backgroundColor:Colors.azul,
+    color:Colors.blanco,
+    fontSize:20,
+    fontFamily:"jua",
+    paddingVertical:5,
+    paddingHorizontal:10,
+    borderRadius:20
+  },
+  intervaloSeleccionado:{
     backgroundColor:Colors.azulOscuro,
     color:Colors.blanco,
     fontSize:20,
     fontFamily:"jua",
     paddingVertical:5,
     paddingHorizontal:10,
-    borderRadius:10
+    borderRadius:20
   }
 
 

@@ -7,7 +7,7 @@ export default function historial() {
 
   return (
     <ImageBackground source={require('../../../assets/images/fondo.png')} style={GlobalStyles.containerHistorial}>
-      <Text style={GlobalStyles.titulo}>Titulo</Text>
+      <Text style={GlobalStyles.titulo}>PaControl</Text>
       
       {/* Contenedor de los botones */}
       <View style={GlobalStyles.contenedorHistorial}>

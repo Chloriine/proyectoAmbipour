@@ -7,7 +7,7 @@ const ControlTemperatura = () => {
   const [temp1, setTemp1] = useState(16);   // Primera temperatura
   const [temp2, setTemp2] = useState(21);  // Segunda temperatura (límite de temp1 y temp3)
   const [temp3, setTemp3] = useState(26); // Última temperatura
-
+  //de F a C hay que hacer (F-32)x5/9
   return (
     <View style={GlobalStyles.numerosTemperatura}>
         <BotonTemperatura

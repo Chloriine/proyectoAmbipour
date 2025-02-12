@@ -33,6 +33,7 @@ export const Colors = {
   rojoAjustesHabitaculo:"#ef4e4e",
   azulAjustesGrado:"#537BB1",
   negro:"#000000",
-  blanco:"#f9f9f9"
+  blanco:"#f9f9f9",
+  verdeHumedad:'#4ADF54'
 
 };

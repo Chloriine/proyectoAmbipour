@@ -11,7 +11,6 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
         tabBarStyle: Platform.select({
           default: {
@@ -31,8 +30,9 @@ export default function TabLayout() {
         }),
         tabBarLabelPosition: "below-icon",
         tabBarLabelStyle:{
-          fontFamily:"jua"
-        }
+          fontFamily:"jua",
+        },
+        tabBarActiveTintColor: Colors.azulOscuro,
       }}
     >
       
@@ -41,6 +41,7 @@ export default function TabLayout() {
         options={{
           title: 'Inicio',
           tabBarIcon: ({ color }) => <Ionicons name="home" size={28} color={Colors.azul} />,
+          
         }}
       />
       <Tabs.Screen
@@ -55,6 +56,7 @@ export default function TabLayout() {
         options={{
           title: 'Ajustes',
           tabBarIcon: ({ color }) => <Ionicons name="settings" size={28} color={Colors.azul} />,
+          tabBarIcon
         }}
       />
     </Tabs>

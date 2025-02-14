@@ -23,11 +23,11 @@ export default function ajustes() {
             <Text style={GlobalStyles.ajustesOpcionText}>Calidad del Habitáculo</Text>
             
             <View style={GlobalStyles.degradao}>
-              <Image source={require('../../../assets/images/Ajustes/azul.png')}  style={GlobalStyles.imagenDegradao}/>
-              <Image source={require('../../../assets/images/Ajustes/verde.png')}  style={GlobalStyles.imagenDegradao}/>
-              <Image source={require('../../../assets/images/Ajustes/verde.png')}  style={GlobalStyles.imagenDegradao}/>
-              <Image source={require('../../../assets/images/Ajustes/verde.png')}  style={GlobalStyles.imagenDegradao}/>
-              <Image source={require('../../../assets/images/Ajustes/rojo.png')}  style={GlobalStyles.imagenDegradao}/>
+              <Image source={require('../../../assets/images/ajustes/azul.png')}  style={GlobalStyles.imagenDegradao}/>
+              <Image source={require('../../../assets/images/ajustes/verde.png')}  style={GlobalStyles.imagenDegradao}/>
+              <Image source={require('../../../assets/images/ajustes/verde.png')}  style={GlobalStyles.imagenDegradao}/>
+              <Image source={require('../../../assets/images/ajustes/verde.png')}  style={GlobalStyles.imagenDegradao}/>
+              <Image source={require('../../../assets/images/ajustes/rojo.png')}  style={GlobalStyles.imagenDegradao}/>
               
             </View>
             <ControlTemperatura/>

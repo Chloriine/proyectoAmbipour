@@ -16,10 +16,10 @@ export default function TabLayout() {
           default: {
             position: 'absolute', // Hace que la barra de navegación sea flotante
             bottom: 10, // Margen inferior para que flote
-            marginLeft: 165,
-            width: '50%', // Ancho reducido
+            marginLeft: 280,
+            width: 720, // Ancho reducido
             alignSelf: 'center', // Centra la barra de navegación
-            height: 50, // Altura más reducida
+            height: 155, // Altura más reducida
             backgroundColor: Colors.blancoTraslucido, // Color de fondo personalizado
             borderRadius: 100, // Bordes redondeados
             borderWidth: 1, // Bordes gruesos

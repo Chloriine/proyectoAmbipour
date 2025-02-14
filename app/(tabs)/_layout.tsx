@@ -17,19 +17,18 @@ export default function TabLayout() {
             position: 'absolute', // Hace que la barra de navegación sea flotante
             bottom: 10, // Margen inferior para que flote
             marginLeft: 165,
-            width: '50%', // Ancho reducido
-            alignSelf: 'center', // Centra la barra de navegación
-            height: 50, // Altura más reducida
+            width: 720, // Ancho reducido
+            height: 155, // Altura más reducida
             backgroundColor: Colors.blancoTraslucido, // Color de fondo personalizado
             borderRadius: 40, // Bordes redondeados
             borderWidth: 1, // Bordes gruesos
             borderColor: Colors.azul, // Color de borde personalizado
-            elevation: 5, // Para Android
             flexDirection:"column",
           },
         }),
         tabBarLabelPosition: "below-icon",
         tabBarLabelStyle:{
+          fontSize: 32,
           fontFamily:"jua",
         },
         tabBarActiveTintColor: Colors.azulOscuro,
@@ -40,7 +39,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Inicio',
-          tabBarIcon: ({ color }) => <Ionicons name="home" size={28} color={Colors.azul} />,
+          tabBarIcon: ({ color }) => <Ionicons name="home" size={55} color={Colors.azul} />,
           
         }}
       />
@@ -48,14 +47,14 @@ export default function TabLayout() {
         name="historial/index"
         options={{
           title: 'Historial',
-          tabBarIcon: ({ color }) => <Ionicons name="bar-chart" size={28} color={Colors.azul} />,
+          tabBarIcon: ({ color }) => <Ionicons name="bar-chart" size={48} color={Colors.azul} />,
         }}
       />
       <Tabs.Screen
         name="ajustes/index"
         options={{
           title: 'Ajustes',
-          tabBarIcon: ({ color }) => <Ionicons name="settings" size={28} color={Colors.azul} />,
+          tabBarIcon: ({ color }) => <Ionicons name="settings" size={50} color={Colors.azul} />,
           
         }}
       />

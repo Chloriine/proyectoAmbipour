@@ -9,9 +9,9 @@ export const GlobalStyles = StyleSheet.create({
   },
   titulo:{
     fontSize: 120,
-    color: Colors.blanco,
+    color: Colors.azulArboles,
     textAlign: 'center',
-    fontFamily:"cloudy",
+    fontFamily:"cloudy2",
     marginTop:"2%",
     
   },
@@ -265,7 +265,10 @@ export const GlobalStyles = StyleSheet.create({
     paddingVertical:5,
     paddingHorizontal:10,
     borderRadius:20
+  },
+  tabBarIcon:{
+    width:50,
+    height:50,
+    marginBottom:20
   }
-
-
 });

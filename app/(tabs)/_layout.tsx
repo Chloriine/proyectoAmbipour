@@ -5,6 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { useFonts } from 'expo-font';
+import { GlobalStyles } from '@/constants/GlobalStyles';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -16,8 +17,11 @@ export default function TabLayout() {
           default: {
             position: 'absolute', // Hace que la barra de navegación sea flotante
             bottom: 10, // Margen inferior para que flote
-            marginLeft: 280,
-            width: 720, // Ancho reducido
+            paddingTop: 50,
+            marginLeft: 380,
+            width: 500, // Ancho reducido
+            paddingLeft: 30,
+            paddingRight: 30,
             alignSelf: 'center', // Centra la barra de navegación
             height: 155, // Altura más reducida
             backgroundColor: Colors.blancoTraslucido, // Color de fondo personalizado
@@ -41,22 +45,15 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Inicio',
-          tabBarIcon: ({ color }) => <Ionicons name="home" size={55} color={Colors.azul} />,
+          tabBarIcon: ({ color }) => <Ionicons style={GlobalStyles.tabBarIcon} name="home" size={50} color={Colors.azul} />,
           
-        }}
-      />
-      <Tabs.Screen
-        name="historial/index"
-        options={{
-          title: 'Historial',
-          tabBarIcon: ({ color }) => <Ionicons name="bar-chart" size={48} color={Colors.azul} />,
         }}
       />
       <Tabs.Screen
         name="ajustes/index"
         options={{
           title: 'Ajustes',
-          tabBarIcon: ({ color }) => <Ionicons name="settings" size={50} color={Colors.azul} />,
+          tabBarIcon: ({ color }) => <Ionicons style={GlobalStyles.tabBarIcon} name="settings" size={50} color={Colors.azul} />,
           
         }}
       />

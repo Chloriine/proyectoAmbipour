@@ -25,6 +25,7 @@ export const Colors = {
   },
   azul: '#537BB1',
   azulOscuro: '#456590',
+  azulArboles: '#abcfff',
   blancoTraslucido: '#D9D9D9D9',
   azulAjustesHabitaculo:"#5e69e1",
   celesteAjustesHabitaculo:"#72e0ec",

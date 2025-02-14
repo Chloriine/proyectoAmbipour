@@ -12,6 +12,7 @@ export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded]=useFonts({
     cloudy:require("../assets/fonts/Cloudy-0W244.ttf"),
+    cloudy2:require("../assets/fonts/CLOUDY-FONT.ttf"),
     jua:require("../assets/fonts/Jua-Regular.ttf")
   });
   

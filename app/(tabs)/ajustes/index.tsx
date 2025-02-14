@@ -18,15 +18,19 @@ export default function ajustes() {
       <View style={GlobalStyles.ajustesContainer}>
         <Text style={GlobalStyles.ajustesTexto}>Ajustes</Text>
         <View style={GlobalStyles.ajustesOpcionesContainer}>
+          <View style={GlobalStyles.ajustesOpcion}>
+              <Text style={GlobalStyles.ajustesOpcionText}>Unidades de medida</Text>
+              <ControlGrados/>
+          </View>
 
           <View style={GlobalStyles.ajustesOpcion}>
             <Text style={GlobalStyles.ajustesOpcionText}>Calidad del Habitáculo</Text>
             
             <View style={GlobalStyles.degradao}>
               <Image source={require('../../../assets/images/ajustes/azul.png')}  style={GlobalStyles.imagenDegradao}/>
+              <Image source={require('../../../assets/images/ajustes/celeste.png')}  style={GlobalStyles.imagenDegradao}/>
               <Image source={require('../../../assets/images/ajustes/verde.png')}  style={GlobalStyles.imagenDegradao}/>
-              <Image source={require('../../../assets/images/ajustes/verde.png')}  style={GlobalStyles.imagenDegradao}/>
-              <Image source={require('../../../assets/images/ajustes/verde.png')}  style={GlobalStyles.imagenDegradao}/>
+              <Image source={require('../../../assets/images/ajustes/amarillo.png')}  style={GlobalStyles.imagenDegradao}/>
               <Image source={require('../../../assets/images/ajustes/rojo.png')}  style={GlobalStyles.imagenDegradao}/>
               
             </View>
@@ -34,6 +38,12 @@ export default function ajustes() {
             
           </View>
 
+          <View style={GlobalStyles.ajustesOpcion}>
+            <Text style={GlobalStyles.ajustesOpcionText}>Intervalo de Grados</Text>
+            <View style={GlobalStyles.intervalosContainer}>
+              <ControlIntervalo/>
+            </View>
+          </View>
         </View>
       </View>
     </ImageBackground>

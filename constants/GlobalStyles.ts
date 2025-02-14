@@ -93,8 +93,8 @@ export const GlobalStyles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-around',
     alignItems: 'center',
-    width: 580,
-    height: 200,
+    width: 1204,
+    height: 396,
     backgroundColor: Colors.blancoTraslucido,
     borderRadius: 20,
     borderWidth: 1,
@@ -242,9 +242,7 @@ export const GlobalStyles = StyleSheet.create({
     flexDirection:"row"
   },
   imagenDegradao:{
-    height:23,
-    width:50,
-    gap:0
+    marginLeft:-3
   },
   intervalosContainer:{
     flexDirection:"row",

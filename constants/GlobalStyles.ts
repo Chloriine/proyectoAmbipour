@@ -101,7 +101,7 @@ export const GlobalStyles = StyleSheet.create({
   },
   ajustesTexto:{
     fontFamily: "jua",
-    fontSize: 25,
+    fontSize: 40,
     color: Colors.azul,
     textAlign: 'center',
 
@@ -114,7 +114,7 @@ export const GlobalStyles = StyleSheet.create({
   },
   ajustesOpcionText:{
     fontFamily: "jua",
-    fontSize: 15,
+    fontSize: 25,
     color: Colors.azul,
     marginBottom:15,
     alignSelf:"center"
@@ -174,28 +174,20 @@ export const GlobalStyles = StyleSheet.create({
     flexDirection:"row",
   },
   temperaturaAzul:{
-    width:20,
+    width:40,
     backgroundColor:Colors.azulAjustesHabitaculo,
-    borderTopWidth:0.5,
-    borderBottomWidth:0.5,
+    borderTopWidth:1,
+    borderBottomWidth:1,
     borderColor:Colors.negro,
-    height:25
-  },
-  temperaturaVerde:{
-    width:20,
-    backgroundColor:Colors.verdeAjustesHabitaculo,
-    borderTopWidth:0.5,
-    borderBottomWidth:0.5,
-    borderColor:Colors.negro,
-    height:25
+    height:45
   },
   temperaturaRojo:{
-    width:20,
+    width:40,
     backgroundColor:Colors.rojoAjustesHabitaculo,
-    borderTopWidth:0.5,
-    borderBottomWidth:0.5,
+    borderTopWidth:1,
+    borderBottomWidth:1,
     borderColor:Colors.negro,
-    height:25
+    height:45
   },
   numerosTemperatura:{
     flexDirection:"row",
@@ -203,34 +195,35 @@ export const GlobalStyles = StyleSheet.create({
   },
   temperaturaText:{
     color:Colors.negro,
-    fontSize:20,
+    fontSize:40,
     fontFamily:"jua",
-    padding:3
+    padding:5
   },
   temperaturaTextDcha:{
     backgroundColor:Colors.blanco,
-    width:20,
+    width:40,
     alignContent:"center",
-    borderWidth:0.7,
+    borderWidth:1,
     borderColor:Colors.negro,
     borderTopRightRadius:20,
     borderBottomRightRadius:20,
-    height:25
+    height:45
   },
   temperaturaTextIzq:{
     backgroundColor:Colors.blanco,
-    width:20,
+    width:40,
     alignContent:"center",
-    borderWidth:0.7,
+    borderWidth:1,
     borderColor:Colors.negro,
     borderTopLeftRadius:20,
     borderBottomLeftRadius:20,
-    height:25
+    height:45
   },
   temperaturaNumero:{
     color:Colors.azul,
     alignSelf:"center",
-    fontFamily:"jua"
+    fontFamily:"jua",
+    fontSize:25
   },
   botonNumerosAjustes:{
     marginHorizontal:10,

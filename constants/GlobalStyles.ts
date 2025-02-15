@@ -103,7 +103,7 @@ export const GlobalStyles = StyleSheet.create({
   },
   ajustesTexto:{
     fontFamily: "jua",
-    fontSize: 25,
+    fontSize: 40,
     color: Colors.azul,
     textAlign: 'center',
 
@@ -116,9 +116,9 @@ export const GlobalStyles = StyleSheet.create({
   },
   ajustesOpcionText:{
     fontFamily: "jua",
-    fontSize: 15,
+    fontSize: 30,
     color: Colors.azul,
-    marginBottom:15,
+    marginBottom:20,
     alignSelf:"center"
   },
   ajustesOpcion:{
@@ -176,63 +176,57 @@ export const GlobalStyles = StyleSheet.create({
     flexDirection:"row",
   },
   temperaturaAzul:{
-    width:20,
+    width:40,
+    height:45,
     backgroundColor:Colors.azulAjustesHabitaculo,
-    borderTopWidth:0.5,
-    borderBottomWidth:0.5,
-    borderColor:Colors.negro,
-    height:25
-  },
-  temperaturaVerde:{
-    width:20,
-    backgroundColor:Colors.verdeAjustesHabitaculo,
-    borderTopWidth:0.5,
-    borderBottomWidth:0.5,
-    borderColor:Colors.negro,
-    height:25
+    borderTopWidth:2,
+    borderBottomWidth:2,
+    borderColor:Colors.azulOscuro,
+    
   },
   temperaturaRojo:{
-    width:20,
+    width:40,
+    height:45,
     backgroundColor:Colors.rojoAjustesHabitaculo,
-    borderTopWidth:0.5,
-    borderBottomWidth:0.5,
-    borderColor:Colors.negro,
-    height:25
+    borderTopWidth:2,
+    borderBottomWidth:2,
+    borderColor:Colors.azulOscuro,
   },
   numerosTemperatura:{
     flexDirection:"row",
     justifyContent:"space-between",
   },
   temperaturaText:{
-    color:Colors.negro,
-    fontSize:20,
+    fontSize:35,
     fontFamily:"jua",
-    padding:3
+    padding:6,
+    color:Colors.azulOscuro
   },
   temperaturaTextDcha:{
     backgroundColor:Colors.blanco,
-    width:20,
+    width:40,
+    height:45,
     alignContent:"center",
-    borderWidth:0.7,
-    borderColor:Colors.negro,
+    borderWidth:2,
+    borderColor:Colors.azulOscuro,
     borderTopRightRadius:20,
     borderBottomRightRadius:20,
-    height:25
   },
   temperaturaTextIzq:{
     backgroundColor:Colors.blanco,
-    width:20,
+    width:40,
+    height:45,
     alignContent:"center",
-    borderWidth:0.7,
-    borderColor:Colors.negro,
+    borderWidth:2,
+    borderColor:Colors.azulOscuro,
     borderTopLeftRadius:20,
     borderBottomLeftRadius:20,
-    height:25
   },
   temperaturaNumero:{
     color:Colors.azul,
     alignSelf:"center",
-    fontFamily:"jua"
+    fontFamily:"jua",
+    fontSize:35
   },
   botonNumerosAjustes:{
     marginHorizontal:10,

@@ -13,10 +13,9 @@ import ControlIntervalo from '@/components/ControlIntervalo';
 
 export default function ajustes() {
   return (
-    <ImageBackground source={require('../../../assets/images/fondo.png')} style={styles.container}>
+    <ImageBackground source={require('../../../assets/images/fondo2.png')} style={styles.container}>
       <Text style={GlobalStyles.titulo}>PaControl</Text>
       <View style={GlobalStyles.ajustesContainer}>
-        <Text style={GlobalStyles.ajustesTexto}>Ajustes</Text>
         <View style={GlobalStyles.ajustesOpcionesContainer}>
           
 

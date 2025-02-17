@@ -25,7 +25,7 @@ function BotonTemperatura({ temperatura, setTemperatura, minTemp, maxTemp, color
                 }} style={GlobalStyles.temperaturaTextIzq}>
                     <Text style={GlobalStyles.temperaturaText}>-</Text>
                 </Pressable>
-                <View style={color == "azul" ? GlobalStyles.temperaturaAzul : color == "verde" ? GlobalStyles.temperaturaVerde : GlobalStyles.temperaturaRojo}>
+                <View style={color == "azul" ? GlobalStyles.temperaturaAzul : GlobalStyles.temperaturaRojo}>
 
                 </View>
                 <Pressable onPress={() => {

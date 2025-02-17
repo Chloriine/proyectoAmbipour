@@ -9,9 +9,9 @@ export const GlobalStyles = StyleSheet.create({
   },
   titulo:{
     fontSize: 120,
-    color: Colors.azulArboles,
+    color: Colors.blanco,
     textAlign: 'center',
-    fontFamily:"cloudy2",
+    fontFamily:"cloudy",
     marginTop:"2%",
     
   },
@@ -93,13 +93,14 @@ export const GlobalStyles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-around',
     alignItems: 'center',
-    width: 1204,
-    height: 396,
+    width: 584,
+    height: 326,
     backgroundColor: Colors.blancoTraslucido,
     borderRadius: 20,
     borderWidth: 1,
     borderColor: Colors.azul,
     margin: 30,
+    alignSelf:"center"
   },
   ajustesTexto:{
     fontFamily: "jua",
@@ -199,8 +200,9 @@ export const GlobalStyles = StyleSheet.create({
   temperaturaText:{
     fontSize:35,
     fontFamily:"jua",
-    padding:6,
-    color:Colors.azulOscuro
+    justifyContent:"center",
+    color:Colors.azulOscuro,
+    alignSelf:"center"
   },
   temperaturaTextDcha:{
     backgroundColor:Colors.blanco,

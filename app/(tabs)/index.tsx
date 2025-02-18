@@ -3,6 +3,9 @@ import { GlobalStyles } from '../../constants/GlobalStyles';
 import { collection, doc, getDocs, onSnapshot } from 'firebase/firestore';
 import { db } from '../../FireBaseconfig';
 import { useState, useEffect } from 'react';
+import { auth } from '../../FireBaseconfig';
+import { Alert } from 'react-native';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 
 export default function index() {
@@ -27,6 +30,36 @@ export default function index() {
     // Cleanup del listener cuando el componente se desmonta
     return () => unsubscribe();
   }, []);
+
+
+  // Login automatico
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  // Función de login
+  const login = async () => {
+    try {
+      const user = await signInWithEmailAndPassword(auth, email, password);
+      console.log('Usuario autenticado:', user);
+    } catch (error:any) {
+      console.error(error);
+      Alert.alert('Inicio de sesión incorrecto', error.message);
+    }
+  };
+
+  // Establecer credenciales automáticamente al iniciar
+  useEffect(() => {
+    setEmail('prueba@gmail.com');
+    setPassword('prueba');
+  }, []);
+
+  // Esperar a que el email y password se actualicen antes de hacer login
+  useEffect(() => {
+    if (email && password) {
+      login();
+    }
+  }, [email, password]);
+
 
   return (
     <ImageBackground source={require('../../assets/images/fondo2.png')} style={GlobalStyles.imagenFondo}>

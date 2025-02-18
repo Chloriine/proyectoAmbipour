@@ -57,6 +57,7 @@ export default function index() {
   useEffect(() => {
     if (email && password) {
       login();
+      console.log('Inicio de sesión correcto')
     }
   }, [email, password]);
 

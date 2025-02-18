@@ -12,7 +12,21 @@ export default function index() {
   const [temperatura, setTemperatura] = useState<any>([]);
   const [humedad, setHumedad] = useState<any>([]);
 
-  
+  useEffect(() => {
+    const q = collection(db, "datos");
+
+    // Listener en tiempo real
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      snapshot.forEach((doc) => {
+        const data = doc.data();
+        setTemperatura(data.temperatura);
+        setHumedad(data.humedad);
+      });
+    });
+
+    // Cleanup del listener cuando el componente se desmonta
+    return () => unsubscribe();
+  }, []);
 
   return (
     <ImageBackground source={require('../../assets/images/fondo2.png')} style={GlobalStyles.imagenFondo}>
@@ -21,12 +35,16 @@ export default function index() {
 
       <View style={GlobalStyles.flexRowContainer}>
         <View style={GlobalStyles.temperaturaHumedadContainer}>
-          <Text style={GlobalStyles.temperaturaHumedadText}>{temperatura}</Text>
-          <Text style={GlobalStyles.gradosPerCentText}>27ºC</Text>
+          <Text style={GlobalStyles.temperaturaHumedadText}>Temperatura</Text>
+          <Text style={GlobalStyles.gradosPerCentText}>
+            {temperatura !== null ? `${temperatura}ºC` : "Cargando..."}
+          </Text>        
         </View>
         <View style={GlobalStyles.temperaturaHumedadContainer}>
-          <Text style={GlobalStyles.temperaturaHumedadText}>{humedad}</Text>
-          <Text  style={GlobalStyles.gradosPerCentText}>65%</Text>
+          <Text style={GlobalStyles.temperaturaHumedadText}>Humedad</Text>
+          <Text style={GlobalStyles.gradosPerCentText}>
+            {humedad !== null ? `${humedad}%` : "Cargando..."}
+          </Text>        
         </View>
       </View>
 

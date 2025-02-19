@@ -2,6 +2,7 @@ import { GlobalStyles } from '@/constants/GlobalStyles'
 import React, { useState } from 'react'
 import { Pressable, PressableProps, Text, ViewProps,View } from 'react-native'
 
+
 interface Props extends ViewProps {
     color:"azul"|"verde"|"rojo";
     temperatura: number;
@@ -11,6 +12,8 @@ interface Props extends ViewProps {
 }
 
 function BotonTemperatura({ temperatura, setTemperatura, minTemp, maxTemp, color }: Props) {
+    
+    
     return (
         <View style={GlobalStyles.botonNumerosAjustes}>
             <Text style= {GlobalStyles.temperaturaNumero}>

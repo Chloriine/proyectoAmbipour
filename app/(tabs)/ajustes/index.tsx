@@ -9,30 +9,35 @@ import { useColorScheme } from '../../../hooks/useColorScheme.web';
 import ControlGrados from '@/components/ControlGrados';
 import BotonIntervalo from '@/components/BotonIntervalo';
 import ControlIntervalo from '@/components/ControlIntervalo';
+import { TemperaturaProvider } from '@/components/TemperaturaContext';
 
 
 export default function ajustes() {
   return (
-    <ImageBackground source={require('../../../assets/images/fondo2.png')} style={styles.container}>
-      <Text style={GlobalStyles.titulo}>PaControl</Text>
-      <View style={GlobalStyles.ajustesContainer}>
-        <View style={GlobalStyles.ajustesOpcionesContainer}>
-          
+    <TemperaturaProvider>
+        <ImageBackground source={require('../../../assets/images/fondo2.png')} style={styles.container}>
+          <Text style={GlobalStyles.titulo}>PaControl</Text>
+          <View style={GlobalStyles.ajustesContainer}>
+            <View style={GlobalStyles.ajustesOpcionesContainer}>
+              
 
-          <View style={GlobalStyles.ajustesOpcion}>
-            <Text style={GlobalStyles.ajustesOpcionText}>Calidad del Habitáculo</Text>
-            
-            <View style={GlobalStyles.degradao}>
-              <Image source={require('../../../assets/images/ajustes/termo.png')}  style={GlobalStyles.imagenDegradao}/>
-             
+              <View style={GlobalStyles.ajustesOpcion}>
+                <Text style={GlobalStyles.ajustesOpcionText}>Calidad del Habitáculo</Text>
+                
+                <View style={GlobalStyles.degradao}>
+                  <Image source={require('../../../assets/images/ajustes/termo.png')}  style={GlobalStyles.imagenDegradao}/>
+                
+                </View>
+                <ControlTemperatura/>
+                
+              </View>
+
             </View>
-            <ControlTemperatura/>
-            
           </View>
+        </ImageBackground>
+    </TemperaturaProvider>
 
-        </View>
-      </View>
-    </ImageBackground>
+    
   );
 }
 

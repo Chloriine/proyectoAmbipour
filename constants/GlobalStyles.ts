@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Colors } from './Colors';
-import ajustes from '@/app/(tabs)/ajustes';
+import ajustes from '../app/(tabs)/ajustes';
 
 export const GlobalStyles = StyleSheet.create({
   imagenFondo:{

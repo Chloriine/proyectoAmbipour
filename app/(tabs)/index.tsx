@@ -1,12 +1,13 @@
 import { Text, View, ImageBackground } from 'react-native';
 import { GlobalStyles } from '../../constants/GlobalStyles';
 import { collection, doc, getDocs, onSnapshot } from 'firebase/firestore';
+import React from 'react';
 import { db } from '../../FireBaseconfig';
 import { useState, useEffect } from 'react';
 import { auth } from '../../FireBaseconfig';
 import { Alert } from 'react-native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { temp1, temp2 } from '@/utils/TemperaturaStorage';
+import { temp1, temp2 } from '../../utils/TemperaturaStorage';
 import axios from 'axios';
 
 export default function index() {
@@ -30,17 +31,20 @@ export default function index() {
             .then(resp => console.log(resp.data));
             console.log(temp1);
             console.log(temp2);
+            console.log('AZUL')
 
         } else if (data.temperatura > temp2) {
           axios.get('http://172.10.0.201:1880/semaforo?color=ROJO')
             .then(resp => console.log(resp.data));
             console.log(temp1);
             console.log(temp2);
+            console.log('ROJO')
         } else {
           axios.get('http://172.10.0.201:1880/semaforo?color=VERDE')
             .then(resp => console.log(resp.data));
             console.log(temp1);
             console.log(temp2);
+            console.log('VERDE')
         }
         setHumedad(data.humedad);
       });
@@ -70,15 +74,19 @@ export default function index() {
   useEffect(() => {
     setEmail('prueba@gmail.com');
     setPassword('prueba');
-  }, []);
-
-  // Esperar a que el email y password se actualicen antes de hacer login
-  useEffect(() => {
     if (email && password) {
       login();
       console.log('Inicio de sesión correcto')
     }
   }, [email, password]);
+
+  // Esperar a que el email y password se actualicen antes de hacer login
+  /*useEffect(() => {
+    if (email && password) {
+      login();
+      console.log('Inicio de sesión correcto')
+    }
+  }, [email, password]);*/
 
 
   return (

@@ -1,39 +1,31 @@
-import { GlobalStyles } from '@/constants/GlobalStyles'
+import { GlobalStyles } from '../constants/GlobalStyles'
 import React, { useState } from 'react'
 import { Pressable, PressableProps, Text, ViewProps,View } from 'react-native'
+import {temp1, temp2, setTemp1, setTemp2} from '../utils/TemperaturaStorage';
 
-
-interface Props extends ViewProps {
-    color:"azul"|"verde"|"rojo";
-    temperatura: number;
-    setTemperatura: (temp: number) => void;
-    minTemp: number;
-    maxTemp: number;
-}
-
-function BotonTemperatura({ temperatura, setTemperatura, minTemp, maxTemp, color }: Props) {
+function BotonTemperaturaAzul() {
     
     
     return (
         <View style={GlobalStyles.botonNumerosAjustes}>
             <Text style= {GlobalStyles.temperaturaNumero}>
-            {temperatura}
+            {temp1}
             </Text>
 
             <View style={GlobalStyles.numerosTemperatura}>
                 <Pressable onPress={() => {
-                    if (temperatura > minTemp) {
-                    setTemperatura(temperatura - 1);
+                    if (temp1 > 15) {
+                    setTemp1(temp1 - 1);
                     }
                 }} style={GlobalStyles.temperaturaTextIzq}>
                     <Text style={GlobalStyles.temperaturaText}>-</Text>
                 </Pressable>
-                <View style={color == "azul" ? GlobalStyles.temperaturaAzul : GlobalStyles.temperaturaRojo}>
+                <View style={GlobalStyles.temperaturaAzul}>
 
                 </View>
                 <Pressable onPress={() => {
-                    if (temperatura < maxTemp) {
-                    setTemperatura(temperatura + 1);
+                    if (temp1 < temp2) {
+                    setTemp1(temp1 + 1);
                     }
                 }} style={GlobalStyles.temperaturaTextDcha}>
                     <Text style={GlobalStyles.temperaturaText}>+</Text>
@@ -46,4 +38,4 @@ function BotonTemperatura({ temperatura, setTemperatura, minTemp, maxTemp, color
     )
 }
 
-export default BotonTemperatura
+export default BotonTemperaturaAzul

@@ -1,9 +1,8 @@
 import { StyleSheet, ImageBackground, Platform, Text, View, Image, Pressable } from 'react-native';
 import { GlobalStyles } from '../../../constants/GlobalStyles';
-import BotonTemperatura from '../../../components/BotonTemperaturaAzul';
 import ControlTemperatura from '../../../components/ControlTemperatura';
 import React from 'react';
-import { useColorScheme } from '../../../hooks/useColorScheme.web';
+import BotonApagado from '../../../components/BotonApagado';
 
 
 export default function ajustes() {
@@ -23,7 +22,7 @@ export default function ajustes() {
 
             </View>
             <ControlTemperatura />
-
+            <BotonApagado/>
           </View>
 
         </View>

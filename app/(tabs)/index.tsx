@@ -9,6 +9,7 @@ import { Alert } from 'react-native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { temp1, temp2 } from '../../utils/TemperaturaStorage';
 import axios from 'axios';
+import { apagado } from '../../utils/ApagadoStorage';
 
 export default function index() {
 
@@ -25,27 +26,34 @@ export default function index() {
       snapshot.forEach((doc) => {
         const data = doc.data();
         setTemperatura(data.temperatura);
-        if (data.temperatura < temp1) {
+        if(!apagado){
+          if (data.temperatura < temp1) {
 
-          axios.get('http://172.10.0.201:1880/semaforo?color=AZUL')
-            .then(resp => console.log(resp.data));
-            console.log(temp1);
-            console.log(temp2);
-            console.log('AZUL')
-
-        } else if (data.temperatura > temp2) {
-          axios.get('http://172.10.0.201:1880/semaforo?color=ROJO')
-            .then(resp => console.log(resp.data));
-            console.log(temp1);
-            console.log(temp2);
-            console.log('ROJO')
-        } else {
-          axios.get('http://172.10.0.201:1880/semaforo?color=VERDE')
-            .then(resp => console.log(resp.data));
-            console.log(temp1);
-            console.log(temp2);
-            console.log('VERDE')
+            axios.get('http://172.10.0.201:1880/semaforo?color=AZUL')
+              .then(resp => console.log(resp.data));
+              console.log(temp1);
+              console.log(temp2);
+              console.log('AZUL')
+  
+          } else if (data.temperatura > temp2) {
+            axios.get('http://172.10.0.201:1880/semaforo?color=ROJO')
+              .then(resp => console.log(resp.data));
+              console.log(temp1);
+              console.log(temp2);
+              console.log('ROJO')
+          } else {
+            axios.get('http://172.10.0.201:1880/semaforo?color=VERDE')
+              .then(resp => console.log(resp.data));
+              console.log(temp1);
+              console.log(temp2);
+              console.log('VERDE')
+          }
+        }else{
+          axios.get('http://172.10.0.201:1880/semaforo?color=OFF')
+              .then(resp => console.log(resp.data));
+              console.log('OFF');
         }
+        
         setHumedad(data.humedad);
       });
     });

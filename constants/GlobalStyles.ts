@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { Colors } from './Colors';
 import ajustes from '../app/(tabs)/ajustes';
+import BotonApagado from '../components/BotonApagado';
 
 export const GlobalStyles = StyleSheet.create({
   imagenFondo:{
@@ -266,5 +267,37 @@ export const GlobalStyles = StyleSheet.create({
     width:50,
     height:50,
     marginBottom:20
+  },
+  botonApagado:{
+    alignSelf:"center",
+    backgroundColor:Colors.azulOscuro,
+    padding:7,
+    paddingHorizontal:10,
+    borderRadius:40,
+    borderColor:Colors.azulOscuro,
+    borderWidth:2,
+    width:100
+  },
+  botonApagadoText:{
+    fontSize:40,
+    fontFamily:"jua",
+    color:Colors.azulArboles,
+    alignSelf:"center"
+  },
+  botonEncendido:{
+    alignSelf:"center",
+    backgroundColor:Colors.azulOscuro,
+    padding:7,
+    paddingHorizontal:10,
+    borderRadius:40,
+    borderColor:Colors.azulOscuro,
+    borderWidth:2,
+    width:100
+  },
+  botonEncendidoText:{
+    fontSize:40,
+    fontFamily:"jua",
+    color:Colors.blanco,
+    alignSelf:"center"
   }
 });
